@@ -2,7 +2,7 @@ FROM node:8
 
 # creamos directorio de la app
 
-WORKDIR "/2 SPA/scr/app"
+WORKDIR /SPA/scr/app
 
 # Instalaión app dependencias
 # Una Wildcard se usa para asegurar que package.json and 
