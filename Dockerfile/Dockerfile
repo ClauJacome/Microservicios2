@@ -4,18 +4,18 @@ FROM node:8
 
 WORKDIR ./SPA/scr/app
 
-# Instalaión app dependencias
+# Instalacion app dependencias
 # Una Wildcard se usa para asegurar que package.json and 
 # package-lock.json sean copiados 
 
-COPY package*.json ./
+COPY package*.json /SPA
 
 RUN npm install
 #RUN npm ci --only=production
 
 # app source
 
-COPY . .
+COPY . /SPA
 
 EXPOSE 4200
 
