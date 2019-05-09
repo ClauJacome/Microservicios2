@@ -10,8 +10,8 @@ WORKDIR "/2 SPA/scr/app"
 
 COPY package*.json ./
 
-# RUN npm install
-RUN npm ci --only=production
+RUN npm install
+#RUN npm ci --only=production
 
 # app source
 
