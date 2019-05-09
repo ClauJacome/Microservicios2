@@ -23,5 +23,5 @@ EXPOSE 4200
 
 #CMD [ "npm", "start"]
 
-ENTRYPOINT nom start
+ENTRYPOINT npm start
 
