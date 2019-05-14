@@ -1,6 +1,6 @@
 FROM node:8.6
 
-COPY ./ /app/
+COPY ./ /SPA/
 
 # creamos directorio de la app
 
@@ -17,7 +17,7 @@ RUN npm install
 
 # app source
 
-#COPY . /SPA
+COPY . /SPA
 
 EXPOSE 4200
 
