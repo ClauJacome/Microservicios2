@@ -4,7 +4,7 @@ COPY ./ /SPA/
 
 # creamos directorio de la app
 
-WORKDIR ./
+WORKDIR ./SPA
 
 # Instalacion app dependencias
 # Una Wildcard se usa para asegurar que package.json and 
