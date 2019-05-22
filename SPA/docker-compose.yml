@@ -1,7 +1,9 @@
 version: '2'
 services:
-  web:
-    container_namer: ng-web
+services:
+  angular:
+    hostname: localhost
+    container_name: ng-web
     build: .
     ports:
       - "4200:4200"

@@ -13,6 +13,7 @@ WORKDIR ./SPA
 #COPY package*.json /SPA
 
 RUN npm install -g @angular/cli && npm cache clean --force
+RUN npm install -g @angular/cli@latest
 #RUN npm ci --only=production
 
 # app source
