@@ -27,3 +27,12 @@ EXPOSE 49153
 EXPOSE 9876
 # Puerto e2e
 EXPOSE 49152 
+
+ng update @angular/cli
+CMD ng serve --host 0.0.0.0
+
+#ng serve --open
+
+#ng build --prod
+
+
