@@ -30,7 +30,7 @@ EXPOSE 9876
 EXPOSE 49152 
 
 #ng update @angular/cli
-CMD ng serve --host 0.0.0.0
+CMD ng serve --host 35.184.246.115
 
 #ng serve --open
 

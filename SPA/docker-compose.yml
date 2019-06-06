@@ -1,12 +1,11 @@
 version: '2'
 services:
-services:
   angular:
     hostname: localhost
     container_name: ng-web
     build: .
     ports:
-      - "4200:4200"
+      - "35.184.246.115:35.184.246.115"
       - "49153:49153"
     volumes:
     - .:/SPA
