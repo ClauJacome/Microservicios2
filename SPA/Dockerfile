@@ -21,7 +21,7 @@ RUN npm install -g @angular/cli@latest
 COPY . /SPA
 
 # Puerto entorno dev
-EXPOSE 4200
+EXPOSE 8080
 # Puerto livereload
 EXPOSE 49153
 # Puerto Test

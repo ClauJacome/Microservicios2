@@ -1,13 +1,22 @@
 version: '2'
 services:
+services:
   angular:
     hostname: localhost
     container_name: ng-web
     build: .
     ports:
       - "8080:8080"
+  host1:
+    image: busybox
+    command: ifconfig
     networks:
-      vpcbr:
-	ipv4_address: 10.128.0.2
-    volumes:
-    - .:/SPA
+      mynet:
+        ipv4_address: 10.128.0.2
+networks:
+  mynet:
+    driver: bridge
+    ipam:
+      config:
+        - subnet: 10.128.0.0/16
+
