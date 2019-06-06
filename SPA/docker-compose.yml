@@ -5,7 +5,9 @@ services:
     container_name: ng-web
     build: .
     ports:
-      - "35.184.246.115:35.184.246.115"
-      - "49153:49153"
+      - "8080:8080"
+    networks:
+      vpcbr:
+	ipv4_address: 10.128.0.2
     volumes:
     - .:/SPA
